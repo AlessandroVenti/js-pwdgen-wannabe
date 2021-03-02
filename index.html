@@ -1,4 +1,10 @@
-<!DOCTYPE html>
+<!-- TODAY
+REPO: js-pwdgen-wannabe
+GOAL: chiedere all'utente nome, cognome e colore preferito e stampare nell'h1 in pagina una stringa cosi' composta:
+nomecognomecolore19
+prendendo i dati da quelli forniti dall'utente-->
+
+<DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -19,6 +25,11 @@
 
     <script type="text/javascript">
 
+    var name = prompt("Inserisci il tuo nome");
+    var surname = prompt("Inserisci il tuo cognome");
+    var color = prompt("Inserisci il tuo colore preferito");
+    document.getElementById("lol").innerHTML = name + surname + color + "19";
+    console.log(name + surname + color + "19");
 
     </script>
   </body>

@@ -28,6 +28,14 @@ prendendo i dati da quelli forniti dall'utente-->
         color: yellow;
       }
 
+      .grey {
+        color: grey;
+      }
+
+      .turquoise {
+        color: turquoise;
+      }
+
     </style>
   </head>
   <body>
@@ -43,11 +51,21 @@ prendendo i dati da quelli forniti dall'utente-->
     if (color === "blu") {
       document.writeln('<h1 id ="lol2" class="blue"></h1>');
       document.getElementById("lol2").innerHTML = name + surname + color + "19";
+
     } else if (color !== "blue" && color === "verde") {
         document.writeln('<h1 id ="lol2" class="green"></h1>');
         document.getElementById("lol2").innerHTML = name + surname + color + "19";
+
     } else if (color === "giallo") {
         document.writeln('<h1 id ="lol2" class="yellow"></h1>');
+        document.getElementById("lol2").innerHTML = name + surname + color + "19";
+
+    } else if (color === "grigio") {
+        document.writeln('<h1 id ="lol2" class="grey"></h1>');
+        document.getElementById("lol2").innerHTML = name + surname + color + "19";
+        
+    } else if(color === "turchese") {
+        document.writeln('<h1 id ="lol2" class="turquoise"></h1>');
         document.getElementById("lol2").innerHTML = name + surname + color + "19";
     }
 

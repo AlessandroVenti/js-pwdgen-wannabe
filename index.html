@@ -16,6 +16,18 @@ prendendo i dati da quelli forniti dall'utente-->
         color: red;
       }
 
+      .blue {
+        color: blue;
+      }
+
+      .green {
+        color: green;
+      }
+
+      .yellow {
+        color: yellow;
+      }
+
     </style>
   </head>
   <body>
@@ -27,7 +39,22 @@ prendendo i dati da quelli forniti dall'utente-->
     var name = prompt("Inserisci il tuo nome");
     var surname = prompt("Inserisci il tuo cognome");
     var color = prompt("Inserisci il tuo colore preferito");
-    document.getElementById("lol").innerHTML = name + surname + color + "19";
+
+    if (color === "blu") {
+      document.writeln('<h1 id ="lol2" class="blue"></h1>');
+      document.getElementById("lol2").innerHTML = name + surname + color + "19";
+    } else if (color !== "blue" && color === "verde") {
+        document.writeln('<h1 id ="lol2" class="green"></h1>');
+        document.getElementById("lol2").innerHTML = name + surname + color + "19";
+    } else if (color === "giallo") {
+        document.writeln('<h1 id ="lol2" class="yellow"></h1>');
+        document.getElementById("lol2").innerHTML = name + surname + color + "19";
+    }
+
+
+
+
+
     console.log(name + surname + color + "19");
 
     </script>
